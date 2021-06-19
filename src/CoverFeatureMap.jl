@@ -4,7 +4,7 @@ module CoverFeatureMap
 
 using Random, GLPK, JuMP, LinearAlgebra
 
-export cnp
+export cnp, cnp_triplets
 
 function generate2plet(N, rho)
     x1 = vcat(zeros(N-1),1)
